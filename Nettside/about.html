@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--Generell metadata start-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kandidat: 212881">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="description" content="Eksamen - Learn more about our company and our clients and services. Contact us for more information">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="img/logo1.png">
+    <title>Eksamen - About</title>
+    <!--Generell metadata slutt-->
+
+    <!--Fontawsome icons start -->
+    <script src="https://kit.fontawesome.com/7b467d2fce.js" crossorigin="anonymous"></script>
+    <!--Fontawsome icons slutt -->
+
+    <!--Facebook metadata start-->
+    <meta property="og:title" content="Eksamen - About">
+    <meta property="og:description" content="Contact us for more information">
+    <meta property="og:image" content="/img/section-header-img.jpg">
+    <!--Facebook metadata slutt-->
+
+</head>
+
+<body itemscope itemtype="https://schema.org/Organization">
+
+    <!-- Organisasjonsinformasjon brukt til microdata-->
+    <meta itemprop="name" content="Eksamen - Company">
+    <meta itemprop="description" content="Learn more about our company and our clients and services. Contact us for more information">
+
+    <header id="topp">
+
+        <!-- Navigasjonsmenyen inneholder både logoen og navigasjonsknappene.-->
+        <nav>
+            <h1>
+                <a href="index.html"><img itemprop="logo" src="img/logo1.png" alt="Logo-top"></a>
+            </h1>
+
+            <ul>
+                <li><a itemprop="url" href="index.html">Home</a></li>
+                <li><a href="products.html">Portfolio</a></li>
+                <li><a class="about" href="about.html">About</a></li>
+                <li><a href="#contact" class="nav_contact_style">Contact</a></li>
+
+            </ul>
+        </nav>
+
+        <!-- Bilde, knapp og innhold i header (bilde er lagt til som background-image i css) -->
+        <div class="header-about">
+            <article tabindex="0">
+                <h2>Company name</h2>
+                <h3>About Our Company</h3>
+                <p>
+                    Aenean vitae massa sit amet orci lobortis molestie. Proin condimentum mauris leo, eu volutpat velit semper eget.
+                    Cras aliquam erat sed luctus aliquam.
+                    Nunc cursus purus in risus accumsan accumsan. Curabitur vulputate ante venenatis vestibulum consequat.
+                    Cras aliquam erat sed luctus aliquam.
+                </p>
+                <a href="#contact">Get in touch with us</a>
+
+            </article>
+        </div>
+
+    </header>
+
+    <!-- Hovedinnhold -->
+    <main id="main-about" class="main-about">
+
+        <!-- Section-3 "Our Services" innhold  (direkte kopiert fra index.html) -->
+        <section class="section-3" itemscope itemtype="http://schema.org/Service">
+            <h2 tabindex="0">Our Services</h2>
+
+            <article tabindex="0" itemscope itemtype="http://schema.org/Service">
+                <i class="fas fa-users"></i>
+                <h3 itemprop="serviceType">Branding</h3>
+                <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </article>
+
+            <article tabindex="0" itemscope itemtype="http://schema.org/Service">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <h3 itemprop="serviceType">Branding</h3>
+                <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </article>
+
+            <article tabindex="0" itemscope itemtype="http://schema.org/Service">
+                <i class="fas fa-code"></i>
+                <h3 itemprop="serviceType">Branding</h3>
+                <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </article>
+
+            <article tabindex="0" itemscope itemtype="http://schema.org/Service">
+                <i class="fas fa-wifi"></i>
+                <h3 itemprop="serviceType">Branding</h3>
+                <p itemprop="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </article>
+        </section>
+
+        <!-- Section-clients "Some of our clients" innhold -->
+        <section class="section-clients">
+            <h2 tabindex="0">Some of our clients</h2>
+
+            <span>
+                <img tabindex="0" itemprop="image" src="img/logo1.png" alt="clients image 1">
+                <img tabindex="0" src="img/logo2.png" alt="clients image 2">
+                <img tabindex="0" src="img/logo3.png" alt="clients image 3">
+            </span>
+        </section>
+
+        <!-- Section-contact "Contact us" innhold -->
+        <section class="section-contact" id="contact">
+            <h2>Contact us</h2>
+
+            <!-- Artikkel for "Send us a message" innhold. Kilde: https://www.w3schools.com/tags/tag_textarea.asp -->
+            <article tabindex="0">
+                <h3 tabindex="0">Send us a message</h3>
+
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Ola Nordmann.." required>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Branding.." required>
+
+                    <label for="message">Message:</label>
+                    <textarea aria-label="Write us a message here" id="message" name="message" required rows="10" cols=100> </textarea>
+
+                    <button type="submit">Send message</button>
+                </form>
+            </article>
+
+            <!-- Artikkel for "Contact Information" innhold  -->
+            <article>
+                <h3 tabindex="0">Contact Information</h3>
+
+                <p tabindex="0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean lectus diam, efficitur iaculis nulla ut, fringilla faucibus purus.
+                </p>
+
+                <ul>
+                    <li itemprop="address" tabindex="0" aria-label="Address: B R A Veien 4, 1757 Halden"><i class="fa-solid fa-location-pin"></i> B R A Veien 4, 1757 Halden</li>
+                    <li itemprop="telephone" tabindex="0" aria-label="Phone number: 69 60 80 00"><i class="fa-solid fa-phone"></i>69 60 80 00 </li>
+                    <li itemprop="email" tabindex="0" aria-label="Mail address: postmottak@hiof.no"><i class="fa-solid fa-envelope"></i><a href="mailto:postmottak@hiof.no">postmottak@hiof.no</a></li>
+                </ul>
+
+            </article>
+        </section>
+
+        <!-- Google-maps der HIOF adresse er lagt inn  -->
+        <iframe aria-label="google maps location for our company" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882765434243!2d11.350228377367081!3d59.12925022701983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1700525131417!5m2!1sno!2sno" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <!-- Tilbake til toppen knapp -->
+        <a href="#topp" aria-label="Go to the top of the page"><i class="fa-solid fa-arrow-up"></i></a>
+
+    </main>
+
+    <!-- Footer innhold -->
+    <footer>
+
+        <!-- Logo i footer -->
+        <a href="index.html"><img src="img/logo1.png" alt="Logo-bottom"></a>
+
+        <p tabindex="0">Companyrights Companyname 2023 </p>
+
+        <!-- Ikoner for sosiale medier som kan trykkes på for å bli viderekoblet til organisasjonens sosiale medier (dummy lenker satt inn). -->
+        <ul>
+            <li><a itemprop="sameAs" href="https://www.facebook.com" aria-label="Link to Facebook"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li><a itemprop="sameAs" href="https://www.instagram.com" aria-label="Link to Instagram"><i class="fa-brands fa-square-instagram"></i></a></li>
+            <li><a itemprop="sameAs" href="https://www.linkedin.com" aria-label="Link to LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
