@@ -1,0 +1,1043 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto");  /* Import av google fonts - Roboto*/
+
+/* Tilbakestill noen standardstiler */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Stil for  nettsiden */
+body {
+  padding: 0;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: calc(0.2em + 1vw);
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+}
+
+nav {
+  margin: 2% 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  gap: 2vh;
+}
+
+.nav_contact_style {
+  background-color: #e6bd43;
+  padding: 15px;
+  font-weight: bolder;
+}
+
+.home,
+.about,
+.portfolio {
+  font-weight: bolder;
+  border-bottom: 2.5px solid #e6bd43;
+}
+
+nav h1 img {
+  max-width: 100px;
+}
+
+footer {
+  background-color: #252525;
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+footer a img {
+  max-width: 100px;
+}
+
+footer p {
+  color: white;
+  font-size: 1rem;
+}
+
+.fa-square-facebook,
+.fa-square-instagram,
+.fa-linkedin {
+  color: white;
+  font-size: 2rem;
+}
+
+/* stiler for header banner hoved side*/
+
+.header-video-desktop {
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.header-video-desktop video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.header-video-desktop div a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e6bd43;
+  color: black;
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header-video-desktop::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 99%;
+  background-color: rgb(245 245 245 / 50%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.header-video-desktop div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+  z-index: 1;
+}
+
+.header-video-desktop video {
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.header-video-desktop div p {
+  margin-top: 3%;
+  font-size: 1.5rem;
+}
+
+.header-video-desktop div h2 {
+  font-size: 2.5rem;
+}
+
+.header-image-mobile {
+  display: none;
+}
+
+/* main hoved side*/
+
+.fa-arrow-up {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 5%;
+  margin-bottom: 2%;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #252525;
+  padding: 1% 0.8% 1%;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+/* main section-1 hoved side*/
+
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  margin: 5% 0 5%;
+  padding: 0 10% 0;
+  align-items: center;
+}
+.section-1 h2 {
+  text-align: center;
+  margin-bottom: 5%;
+  max-width: 50%;
+  font-size: 2.5rem;
+}
+
+.section-1 p {
+  text-align: center;
+  font-size: 1.5rem;
+  max-width: 80%;
+}
+
+/* main section-2 hoved side*/
+
+.section-2 {
+  margin: 5% 0 5%;
+  background-color: #e6bd43;
+  display: flex;
+  flex-direction: row;
+}
+
+.section-2 h2 {
+  margin: 5% 0 5%;
+  font-size: 2.5rem;
+}
+
+.section-2 article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-2 article a {
+  display: inline-block;
+  padding: 15px 25px;
+  color: black;
+  text-decoration: none;
+  margin-top: 20px;
+  margin-bottom: 10%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 2px solid black;
+  background-color: #e6bd43;
+  max-width: fit-content;
+}
+
+.section-2 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 3.5%;
+}
+
+.section-2 article p {
+  max-width: 90%;
+  font-size: 1.5rem;
+}
+
+/* main section-3 hoved side*/
+
+.section-3 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 5% 0 5%;
+  padding: 0 5%;
+}
+
+.section-3 article p {
+  color: black;
+  margin: 10% 0 10%;
+  max-width: 250px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.section-3 article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fa-users,
+.fa-cloud-upload-alt,
+.fa-code,
+.fa-wifi {
+  font-size: 2.5rem;
+}
+
+.section-3 h3 {
+  margin-top: 5%;
+  font-size: 1.5rem;
+}
+
+.section-3 h2 {
+  width: 100%;
+  margin-bottom: 5%;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+/* main section-4 hoved side*/
+
+.section-4 {
+  background-color: rgb(240, 240, 240);
+  padding: 20px;
+  text-align: center;
+}
+
+.newsletter-heading {
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+.newsletter-form input {
+  padding: 16px;
+  max-width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 5px;
+  font-size: 1rem;
+}
+
+.newsletter-form button {
+  padding: 15px 20px;
+  background-color: #e6bd43;
+  color: black;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.section-4 h2 {
+  margin: 5% 0 2%;
+  font-size: 2.5rem;
+}
+
+/* stiler for products siden */
+
+.section-header-products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-image: url("../img/section-header-img.jpg"); /*bilde hentet fra: https://pixabay.com/photos/pen-notebook-notepad-diary-4337521/ */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 5%;
+  z-index: -1;
+}
+
+.section-header-products::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  z-index: -2;
+}
+
+.section-header-products h2 {
+  z-index: 0;
+  font-size: 2.5rem;
+}
+
+/* stiler for products main */
+
+.main-products {
+  margin: 0 5% 0 5%;
+}
+
+.explore-previous-jobs h2,
+.branding h2,
+.design h2,
+.development h2 {
+  width: 100%;
+  margin: 5% 0 5%;
+  border-bottom: 5px solid #e6bd43;
+  padding-bottom: 2%;
+}
+
+.explore-previous-jobs-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1%;
+  margin: 5% 0 5%;
+}
+
+.explore-previous-jobs-links li a {
+  text-decoration: none;
+  border: 2px solid #000000;
+  color: black;
+  padding: 10px;
+}
+
+.branding {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+
+.branding article {
+  flex: auto;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+  max-width: 692px;
+}
+
+.branding article img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.branding article h3 {
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+
+/* stiler for products siden Design section */
+
+.design {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+
+.design article {
+  flex: auto;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+  max-width: 692px;
+}
+
+.design article img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.design article h3 {
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+
+/* stiler for products siden development section */
+
+.development {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3%;
+}
+
+.development article {
+  flex: auto;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+  max-width: 692px;
+}
+
+.development article img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.development article h3 {
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+
+/*stiler for about siden */
+
+/* stiler for header-about */
+
+.header-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 55vh;
+  background-image: url("../img/section-header-img.jpg"); /*bilde hentet fra: https://pixabay.com/photos/pen-notebook-notepad-diary-4337521/ */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: flex-end;
+}
+
+.header-about article {
+  background-color: #ffffffd2;
+  margin: 2.5% 5% 2.5%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+  width: 50%;
+}
+
+.header-about h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5%;
+}
+
+.header-about h2 {
+  margin-bottom: 2%;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.header-about p {
+  font-size: 1.5rem;
+}
+
+.header-about a {
+  display: inline-block;
+  padding: 15px 25px;
+  color: black;
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 2px solid black;
+  background-color: #e6bd43;
+  max-width: fit-content;
+  border: none;
+}
+
+/* stiler for about siden section-clients */
+
+.section-clients {
+  margin-top: 5%;
+  background-color: #e6bd43;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-clients h2 {
+  margin: 5% 2% 5%;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.section-clients {
+  width: 100%;
+  padding: 0 5% 3%;
+}
+
+.section-clients span {
+  display: flex;
+  gap: 2%;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* stiler for about siden section-contact */
+
+.section-contact {
+  background-color: rgb(240, 240, 240);
+  padding: 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-contact h2 {
+  width: 100%;
+  margin-bottom: 5%;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.section-contact article {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  padding-left: 5%;
+}
+
+.section-contact article h3 {
+  margin-bottom: 5%;
+  font-size: 2rem;
+}
+
+.section-contact article form {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-contact article p {
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.section-contact article ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  list-style: none;
+}
+
+.section-contact article ul li {
+  margin-top: 2%;
+  font-size: 1.5rem;
+}
+
+.section-contact article form button {
+  padding: 15px 25px;
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 2px solid black;
+  background-color: #e6bd43;
+  max-width: fit-content;
+  border: none;
+  margin-top: 5%;
+}
+
+.section-contact article form input,
+textarea {
+  max-width: 600px;
+  border: none;
+}
+
+.section-contact article form label {
+  margin-top: 2%;
+  margin-bottom: 1%;
+  font-size: 1.5rem;
+}
+
+.section-contact article form input {
+  padding: 3%;
+  max-width: 600px;
+}
+
+.section-contact article form textarea {
+  padding: 2%;
+  width: 100%;
+}
+
+.fa-location-pin,
+.fa-phone,
+.fa-envelope {
+  color: #3d3d3d;
+  margin-right: 5%;
+}
+
+/* stiler for about siden  google-maps */
+
+.main-about iframe {
+  height: 300px;
+  width: 100%;
+}
+
+/* Responsive stiler */
+
+@media (max-width: 768px) {
+  body {
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+  }
+
+  .fa-arrow-up {
+    font-size: 1.5rem;
+    padding: 2% 1.5%;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    flex-direction: column;
+    margin-bottom: 10%;
+  }
+
+  .header-video-desktop {
+    display: none;
+  }
+
+  nav {
+    font-size: 1.5rem;
+  }
+
+  /* stiler for header, bilde + innehold  mobil */
+
+  .header-image-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-image: url("../img/section-header-img.jpg"); /*bilde hentet fra: https://pixabay.com/photos/pen-notebook-notepad-diary-4337521/ */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 5%;
+  }
+
+  .header-image-mobile::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    z-index: 0;
+  }
+
+  .header-image-mobile a {
+    display: inline-block;
+    padding: 20px 25px;
+    background-color: #e6bd43;
+    color: #000000;
+    text-decoration: none;
+    margin: 10% 0 5% 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    position: relative;
+    max-width: 100%;
+    white-space: nowrap;
+  }
+
+  .header-image-mobile p,
+  h2 {
+    z-index: 0;
+    font-size: 1.5rem;
+  }
+
+  .header-image-mobile h2 {
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin: 5% 0 5% 0;
+    text-align: center;
+  }
+
+  .header-image-mobile p {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  /* stiler for section-1 mobil */
+
+  .section-1 {
+    margin: 20% 0;
+  }
+
+  .section-1 p {
+    font-size: 1.5rem;
+    max-width: 100%;
+  }
+
+  .section-1 h2 {
+    font-size: 1.5rem;
+    max-width: 100%;
+  }
+
+  /* stiler for section-2 mobil */
+
+  .section-2 {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+  }
+
+  .section-2 img {
+    max-width: 100%;
+  }
+
+  .section-2 h2 {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .section-2 article p {
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 5%;
+  }
+
+  .section-2 article {
+    max-width: 75%;
+  }
+
+  .section-2 article a {
+    font-size: 1rem;
+  }
+
+  /* stiler for section-3 mobil */
+
+  .section-3 article {
+    margin: 10% 0 10%;
+  }
+
+  /* stiler for section-4 mobil */
+
+  .section-4 {
+    padding: 10% 0 10%;
+  }
+
+  .section-4 h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+  }
+
+  .newsletter-form button {
+    font-size: 1rem;
+    white-space: nowrap;
+    margin-right: 20px;
+  }
+  .newsletter-form input {
+    font-size: 1rem;
+    max-width: fit-content;
+    margin-right: 2px;
+    margin-left: 5%;
+  }
+
+  .newsletter-form {
+    margin: 2% 0 2%;
+  }
+
+  /* stiler for footer mobil */
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer a {
+    margin-top: 5%;
+  }
+
+  footer p {
+    margin: 5% 0 5%;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  /* stiler for Products side mobil  */
+
+  .explore-previous-jobs a {
+    font-size: 1rem;
+  }
+
+  .branding article h3,
+  .design article h3,
+  .development article h3 {
+    font-size: 1rem;
+    margin-top: 5%;
+  }
+
+  .branding article,
+  .design article,
+  .development article {
+    margin: 5% 0 5%;
+  }
+
+  .branding h2,
+  .design h2,
+  .development h2,
+  .explore-previous-jobs h2 {
+    margin-bottom: 10%;
+  }
+
+  .explore-previous-jobs ul li {
+    margin: 10% 2% 10%;
+  }
+
+  /* stiler for about siden mobil*/
+
+  .header-about h2 {
+    font-size: 1rem;
+  }
+  .header-about h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10%;
+    margin-top: 10%;
+  }
+
+  .header-about p {
+    font-size: 1rem;
+  }
+  .header-about a {
+    font-size: 1rem;
+    white-space: nowrap;
+    width: fit-content;
+  }
+
+  .header-about {
+    align-items: center;
+  }
+
+  .header-about article {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 10%;
+    width: 70%;
+  }
+
+  /* stiler for about siden contact section our services mobil */
+
+  .main-about .section-3 h2 {
+    font-size: 1.5rem;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  /* stiler for about siden contact section clients mobil */
+
+  .section-clients h2 {
+    font-size: 1.5rem;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .section-clients span {
+    padding-bottom: 10%;
+  }
+
+  .section-clients span img {
+    margin-top: 3%;
+  }
+
+  /* stiler for about siden contact information mobil */
+
+  .section-contact {
+    flex-direction: column;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+
+  .section-contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .section-contact article p {
+    font-size: 1.2rem;
+  }
+
+  .section-contact article h3 {
+    font-size: 1.5rem;
+  }
+
+  .section-contact article {
+    max-width: 100%;
+    padding-left: 0;
+    margin-top: 20%;
+  }
+
+  .section-contact article ul li {
+    font-size: 1.2rem;
+  }
+
+  .section-contact article form input::placeholder {
+    font-size: 1.2rem;
+  }
+
+  .section-contact article form input {
+    padding: 5%;
+    font-size: 1.2rem;
+  }
+
+  .section-contact article form button {
+    font-size: 1rem;
+  }
+
+  .section-contact article ul li {
+    margin-top: 5%;
+  }
+}
+
+/* Fjerner hover effekt for mobil, denne css gjør hover effektene tilgjengelig kun for skjermstørelse over 768px */
+
+@media only screen and (min-width: 768px) {
+  .nav_contact_style:hover {
+    background-color: #252525;
+    color: #e6bd43;
+  }
+
+  .header-video-desktop div a:hover {
+    background-color: #252525;
+    color: #e6bd43;
+  }
+
+  .section-2 article a:hover {
+    background-color: #252525;
+    color: #e6bd43;
+  }
+
+  .newsletter-form button:hover {
+    background-color: #252525;
+    color: #e6bd43;
+  }
+
+  .explore-previous-jobs-links a:hover {
+    background-color: #252525;
+    color: #e6bd43;
+    font-weight: bolder;
+  }
+  .header-about article a:hover {
+    background-color: #252525;
+    color: #e6bd43;
+  }
+  .section-contact article form button:hover {
+    background-color: #252525;
+    color: #e6bd43;
+  }
+
+  .branding article:hover {
+    transform: scale(1.1);
+  }
+  .design article:hover {
+    transform: scale(1.1);
+  }
+
+  .development article:hover {
+    transform: scale(1.1);
+  }
+}
